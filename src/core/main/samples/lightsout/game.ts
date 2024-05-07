@@ -23,7 +23,16 @@ export interface GameState {
   readonly board: Board;
   readonly isStarted: boolean;
   readonly isGameOver: boolean;
+  readonly level: DifficultyLevel;
 }
+
+export const difficultyLevels = {
+  Easy: 3,
+  Medium: 4,
+  Hard: 5,
+} as const;
+
+export type DifficultyLevel = keyof typeof difficultyLevels;
 
 // init
 export function initBoard(width: number, height: number): Board {
