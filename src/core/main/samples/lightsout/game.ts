@@ -1,10 +1,16 @@
 import { assignArray } from "./util";
 
+// Copilotくんがわかるようにコメントを追加しました。
+// ゲームボードは通常、正方形のセルで構成されています。
+// 各セルは、ON（明るい）またはOFF（暗い）の2つの状態のいずれかになります。
+// ゲームが開始されると、ランダムに配置されたセルがONまたはOFFの状態で表示されます。
+// プレイヤーの目標は、すべてのセルをOFF（暗い状態）にすることです。
+// ゲームプレイ中にプレイヤーがセルをクリックすると、そのセルとその周囲のセルの状態が反転します（ONからOFF、OFFからONに切り替わります）。
+// セルの周りには、上下左右のセルがあり、それらのセルも反転します。
+// セルの状態をうまく切り替えて、すべてのセルをOFFにしましょう。
+
 export interface Cell {
-  readonly isOpened: boolean;
-  readonly hasMine: boolean;
-  readonly surroundingMines: number;
-  readonly isFlagged: boolean;
+  readonly isLightOn: boolean;
 }
 
 export interface Board {
@@ -19,29 +25,36 @@ export interface GameState {
   readonly isGameOver: boolean;
 }
 
+// init
 export function initBoard(width: number, height: number): Board {
-  return {
-    width,
-    height,
-    cells: new Array<Cell>(width * height).fill({
-      isOpened: false,
-      hasMine: false,
-      surroundingMines: 0,
-      isFlagged: false,
-    }),
-  };
+  const cells = Array.from({ length: width * height }, () => ({
+    isLightOn: false,
+  }));
+  return { width, height, cells };
 }
 
-const surrounding: ReadonlyArray<[number, number]> = [
-  [-1, -1],
-  [-1, 0],
-  [-1, 1],
-  [0, -1],
-  [0, 1],
-  [1, -1],
-  [1, 0],
-  [1, 1],
-];
+// random
+export function initBoardWithRandomLights(
+  width: number,
+  height: number,
+  nLights: number
+): Board {
+  const cells = Array.from({ length: width * height }, () => ({
+    isLightOn: false,
+  }));
+
+  for (let i = 0; i < nLights; i++) {
+    const randomIndex = Math.floor(Math.random() * cells.length);
+    const cell = cells[randomIndex];
+    if (!cell.isLightOn) {
+      cells[randomIndex] = { ...cell, isLightOn: true };
+    } else {
+      i--; // If the cell is already light on, retry the loop
+    }
+  }
+
+  return { width, height, cells };
+}
 
 function indexToCoodinate(i: number, width: number): [number, number] {
   const x = i % width;
@@ -78,121 +91,40 @@ function isInsideBoard(
   return x >= 0 && x < width && y >= 0 && y < height;
 }
 
-export function putMinesRandomly(
-  board: Board,
-  nMines: number,
-  startX: number,
-  startY: number
-): Board {
-  if (nMines <= 0) return board;
+export function isLightsOnAll(board: Board): boolean {
+  return board.cells.every((cell) => cell.isLightOn);
+}
 
-  const { width, height, cells } = board;
+export function toggleCell(board: Board, x: number, y: number): Board {
+  const directions = [
+    [0, 0], // center
+    [0, -1], // top
+    [0, 1], // bottom
+    [-1, 0], // left
+    [1, 0], // right
+  ];
 
-  const candidates = Array.from(
-    { length: cells.length },
-    (_, k) => [k, cells[k]] as [number, Cell]
-  ).filter(([i, cell]) => {
-    if (cell.isOpened || cell.hasMine) return false;
+  let newCells = [...board.cells];
 
-    const [x, y] = indexToCoodinate(i, width);
-
-    return Math.abs(x - startX) > 1 || Math.abs(y - startY) > 1;
-  });
-
-  if (candidates.length === 0) {
-    return board;
-  }
-
-  const n = Math.min(nMines, candidates.length);
-  const targetIndices: number[] = [];
-
-  while (targetIndices.length < n) {
-    const [i] = candidates[Math.floor(Math.random() * candidates.length)];
-    if (!targetIndices.includes(i)) {
-      targetIndices.push(i);
+  for (const [dx, dy] of directions) {
+    const nx = x + dx;
+    const ny = y + dy;
+    if (isInsideBoard(nx, ny, board.width, board.height)) {
+      const i = coordinateToIndex(nx, ny, board.width);
+      const cell = newCells[i];
+      newCells[i] = { ...cell, isLightOn: !cell.isLightOn };
     }
   }
-
-  const newCells = targetIndices.reduce((cells, targetIndex) => {
-    const [targetX, targetY] = indexToCoodinate(targetIndex, width);
-    return cells.map((cell, i) => {
-      if (i === targetIndex) {
-        return { ...cell, hasMine: true };
-      }
-
-      const [x, y] = indexToCoodinate(i, width);
-      if (Math.abs(x - targetX) <= 1 && Math.abs(y - targetY) <= 1) {
-        return { ...cell, surroundingMines: cell.surroundingMines + 1 };
-      }
-
-      return cell;
-    });
-  }, cells);
 
   return { ...board, cells: newCells };
 }
 
-export function open(state: GameState, x: number, y: number): GameState {
-  if (state.isGameOver) {
-    return state;
-  }
-  const { board } = state;
-  const { width, height } = board;
-
-  const i = coordinateToIndex(x, y, width);
-  const cell = board.cells[i];
-  if (cell.isFlagged) {
-    return state;
-  }
-
-  const openedBoard = assignCell(board, i, { isOpened: true });
-  const afterState = { ...state, board: openedBoard };
-
-  if (cell.hasMine) {
-    return { ...afterState, isGameOver: true };
-  }
-
-  if (cell.surroundingMines > 0) {
-    if (isOpenedAll(afterState.board)) {
-      return { ...afterState, isGameOver: true };
-    }
-    return afterState;
-  }
-
-  const finalState = surrounding
-    .map(([dx, dy]) => [x + dx, y + dy])
-    .filter(([x, y]) => isInsideBoard(x, y, width, height))
-    .filter(([x, y]) => {
-      const { hasMine, isOpened } =
-        openedBoard.cells[coordinateToIndex(x, y, width)];
-      return !hasMine && !isOpened;
-    })
-    .reduce((state, [x, y]) => open(state, x, y), afterState);
-
-  if (isOpenedAll(finalState.board)) {
-    return { ...finalState, isGameOver: true };
-  }
-
-  return finalState;
-}
-
-export function isOpenedAll(board: Board): boolean {
-  return board.cells.every(({ hasMine, isOpened }) => hasMine || isOpened);
-}
-
-export function toggleFlagged(
+export function updateGameState(
   state: GameState,
   x: number,
   y: number
 ): GameState {
-  const { board } = state;
-  const i = coordinateToIndex(x, y, board.width);
-  const cell = board.cells[i];
-
-  if (cell.isOpened) return state;
-
-  return {
-    ...state,
-    board: assignCell(board, i, { isFlagged: !cell.isFlagged }),
-  };
+  const newBoard = toggleCell(state.board, x, y);
+  const isGameOver = !isLightsOnAll(newBoard);
+  return { ...state, board: newBoard, isGameOver };
 }
