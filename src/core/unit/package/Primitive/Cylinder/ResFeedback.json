@@ -1,28 +1,28 @@
 {
   "Object": {
-    "ID": "94153da9-bf04-47d5-b191-212088db9d8a",
+    "ID": "4f4049cc-ed46-4495-abc3-6437b1e12aed",
     "Components": {
-      "ID": "f0b016bd-785d-47e4-80e6-8acb8a64d16f",
+      "ID": "fd66b077-0976-4102-a3ce-403af94ef20b",
       "Data": [
         {
           "Type": "FrooxEngine.DynamicVariableSpace",
           "Data": {
-            "ID": "51283a2c-cdbd-42af-9b3b-0ef76f58d3ef",
-            "persistent-ID": "83c4d292-52a4-4438-8e3f-cc3d39f601f1",
+            "ID": "7b92b6b1-d8b2-46c3-bb5b-c9e60c1367dd",
+            "persistent-ID": "b0b4e942-b830-4e39-8d8a-d22d8b955574",
             "UpdateOrder": {
-              "ID": "c8fe28e3-4c00-447f-8df6-2d6564990c47",
+              "ID": "096cbb90-5f54-4910-98e9-53e74950a1af",
               "Data": 0
             },
             "Enabled": {
-              "ID": "b4bdf0a3-173f-474c-8d2e-0fdf7b72488f",
+              "ID": "250d0953-e189-46d6-a1ce-f1adfcb95dfc",
               "Data": true
             },
             "SpaceName": {
-              "ID": "75b095a4-9ff4-4eaf-bc9d-4f7df0a6fc7f",
+              "ID": "7df29d30-5dbb-4351-82b4-10bf5dd37d84",
               "Data": ""
             },
             "OnlyDirectBinding": {
-              "ID": "4f38585c-7975-45c4-85a2-d60f6602bf70",
+              "ID": "a6e0fbc1-6467-42dd-a54c-019d9df8b782",
               "Data": false
             }
           }
@@ -30,64 +30,64 @@
       ]
     },
     "Name": {
-      "ID": "0c8d5ac9-7897-49d6-824f-6b409b5139a0",
-      "Data": "Primitive/Slot"
+      "ID": "90da2df7-657d-402b-90da-b904b36a4733",
+      "Data": "Primitive/Cylinder"
     },
     "Tag": {
-      "ID": "f4e09bbf-b0d9-4e0b-ba51-634aaa580562",
+      "ID": "bae19897-8788-49a6-b92a-1a6f80e0d040",
       "Data": ""
     },
     "Active": {
-      "ID": "88b67171-02b6-4440-b0f8-13af51793d51",
+      "ID": "3dd1abda-093c-4e0e-b3fc-818fc10247d8",
       "Data": true
     },
-    "Persistent-ID": "940053f9-ee71-4e8e-8971-3772364ad5a0",
+    "Persistent-ID": "9770087e-6566-41c2-8985-0e5751f0d8c8",
     "Position": {
-      "ID": "e9453eee-0043-4a18-8fd1-1c1edde3d4e6",
+      "ID": "4070f102-f261-4866-bb8b-1bfd11a92dda",
       "Data": [0, 0, 0]
     },
     "Rotation": {
-      "ID": "b2f2e6db-9745-431a-a1e8-838d94eb070a",
+      "ID": "23097f1d-c9db-4091-bf03-66439a718b37",
       "Data": [0, 0, 0, 1]
     },
     "Scale": {
-      "ID": "974268e5-cf53-42fd-9f36-0ae507edea83",
+      "ID": "a22861fb-93bd-4e86-b96e-5701c85cce39",
       "Data": [1, 1, 1]
     },
     "OrderOffset": {
-      "ID": "cc05ae8d-85f7-4a54-b499-a5dfd580c25f",
+      "ID": "b16df465-61f3-4f6a-bf00-258c91b1a73a",
       "Data": 0
     },
-    "ParentReference": "a74fa49d-45d9-4321-8c98-f355d75c071f",
+    "ParentReference": "5eb4471f-53a6-46a1-9c18-a5fdf6d3b5ad",
     "Children": [
       {
-        "ID": "a92d674c-dacb-4d9b-840a-5a1d4b26c536",
+        "ID": "df4cb06c-c1dc-4f02-b7e0-790a8241ff85",
         "Components": {
-          "ID": "37436520-1c90-4592-b057-90a8d5afac2d",
+          "ID": "8a890d71-9b5c-42ee-8b1b-bc48b9fa689d",
           "Data": [
             {
               "Type": "FrooxEngine.DynamicReferenceVariable`1[[FrooxEngine.Slot, FrooxEngine, Version=2024.5.7.505, Culture=neutral, PublicKeyToken=null]]",
               "Data": {
-                "ID": "041c4b04-86d8-45a6-8bd4-1505b0ff16e8",
-                "persistent-ID": "02d693a9-f723-4cc5-99b0-ee6b9d642abe",
+                "ID": "eb249514-615e-4f0c-9efd-ebc7f2f9a00a",
+                "persistent-ID": "634d9780-6784-4001-b575-e9565b1a56ba",
                 "UpdateOrder": {
-                  "ID": "6d4e59cd-3228-456d-b645-d6b96e132cbc",
+                  "ID": "a9bc78f7-c16a-48f1-bb29-3fd5820e83ca",
                   "Data": 0
                 },
                 "Enabled": {
-                  "ID": "0952b9d0-1bc9-40a3-89c6-7158c3efa34d",
+                  "ID": "c4f327bd-75d2-4b27-93ff-e29aad591399",
                   "Data": true
                 },
                 "VariableName": {
-                  "ID": "19d8781b-47a9-4457-9884-288a86371992",
+                  "ID": "ce3c2d04-051f-4335-b586-013ce60f0c32",
                   "Data": "Static.Ref"
                 },
                 "Reference": {
-                  "ID": "bf052aa7-429b-4f76-86b4-8c30f378664d",
-                  "Data": "a66750d9-0d0a-44a6-bc00-ffc447e1f9ed"
+                  "ID": "a6d6f6f0-53a3-4d36-a38a-960939d55b9f",
+                  "Data": "73d68185-974b-4d0e-862c-523eabc544ce"
                 },
                 "OverrideOnLink": {
-                  "ID": "d2fe647d-3896-414f-b057-009cf3a30b56",
+                  "ID": "7852927b-ad0e-411f-8b0a-4a9ffbe07c31",
                   "Data": false
                 }
               }
@@ -95,61 +95,61 @@
           ]
         },
         "Name": {
-          "ID": "55b02818-04a0-438a-86d4-0c3f115108a6",
+          "ID": "c9a21898-66fb-4856-a2d8-548fe925d31a",
           "Data": "DV"
         },
         "Tag": {
-          "ID": "bda74974-39a3-41e7-a2bc-4c86eddedade",
+          "ID": "8a0cec87-04f3-4102-a686-6f3282d169e1",
           "Data": ""
         },
         "Active": {
-          "ID": "50ee37a3-4be2-4104-bfa0-944f176a5918",
+          "ID": "4b37dc62-e2bb-44be-9f76-122caa3b6f9d",
           "Data": true
         },
-        "Persistent-ID": "494bc489-64e1-4ccc-9473-4ffc444f3110",
+        "Persistent-ID": "e05bdc32-4bb1-41c2-97da-18b09dccec09",
         "Position": {
-          "ID": "c130d543-9677-4c93-ad84-83c74781f0cd",
+          "ID": "9373bcd3-594c-4bc2-b774-24fbc8b26ecb",
           "Data": [0, 0, 0]
         },
         "Rotation": {
-          "ID": "cbe134e1-a8cf-4c43-8c4a-0e4e4891b1e1",
+          "ID": "6e816df5-299f-4314-8f3d-256ed6fce867",
           "Data": [0, 0, 0, 1]
         },
         "Scale": {
-          "ID": "36487d3f-ef5c-434e-8367-044f4d650bbb",
+          "ID": "2117dff5-00d3-4456-bc26-15e7d4afed77",
           "Data": [1, 1, 1]
         },
         "OrderOffset": {
-          "ID": "cab84e8e-11c2-4762-a7e7-12ff9efc0c2e",
+          "ID": "2a47eaf2-b36f-4f0d-bad2-2ac54ed0212b",
           "Data": 0
         },
-        "ParentReference": "cdd9aa4e-3770-4920-8aab-58f751b37f87",
+        "ParentReference": "0927f39f-601c-4494-9990-c87a8bdebed4",
         "Children": []
       },
       {
-        "ID": "a66750d9-0d0a-44a6-bc00-ffc447e1f9ed",
+        "ID": "73d68185-974b-4d0e-862c-523eabc544ce",
         "Components": {
-          "ID": "99c1c30e-be2e-476c-970c-1895ac8cf386",
+          "ID": "d7774055-d5d1-471f-8765-1374d982a905",
           "Data": [
             {
               "Type": "FrooxEngine.DynamicVariableSpace",
               "Data": {
-                "ID": "dc56d0d9-ec07-4148-8d39-3d64cec30c36",
-                "persistent-ID": "6c004699-df36-4263-85db-43280e2da1af",
+                "ID": "42367e32-f0cc-4962-8abf-27ec888c2a3f",
+                "persistent-ID": "1d730862-d776-4ca7-8a26-698e3bb40d52",
                 "UpdateOrder": {
-                  "ID": "92c18f4d-9dfc-448a-919a-d3d9f53aa909",
+                  "ID": "fdd4b3d7-d91f-4405-b1c8-1c7ba8e77171",
                   "Data": 0
                 },
                 "Enabled": {
-                  "ID": "6b3aeced-37a7-4386-9095-7befd1606412",
+                  "ID": "4149376d-75a2-4a6c-af53-6c2b1cde2aed",
                   "Data": true
                 },
                 "SpaceName": {
-                  "ID": "582eb5a0-d706-4292-92b3-51b38d57136d",
+                  "ID": "df21b9b6-ab3d-4435-a4a3-5d09c2509bce",
                   "Data": ""
                 },
                 "OnlyDirectBinding": {
-                  "ID": "93234d7e-395f-4e86-872c-0aaec2219b91",
+                  "ID": "952188db-8a2c-4251-ac6c-89eddcdbe3c7",
                   "Data": false
                 }
               }
@@ -157,64 +157,64 @@
           ]
         },
         "Name": {
-          "ID": "058e2268-ed83-4a3c-8d84-e9b169ab9ede",
+          "ID": "f6c58a4f-002b-4eb7-8662-e79edd78826e",
           "Data": "Ref"
         },
         "Tag": {
-          "ID": "f33b38c3-3b7a-494f-82f5-c72d799ecb91",
+          "ID": "788928b8-6acd-432f-aca0-8b56e3dcf462",
           "Data": ""
         },
         "Active": {
-          "ID": "5d531558-5df4-43b1-8c16-408d0b8eaf2b",
+          "ID": "83373c2f-39a2-42e4-a230-f23c20d20986",
           "Data": true
         },
-        "Persistent-ID": "2122bb83-265e-486a-84f5-486a19712e0d",
+        "Persistent-ID": "7560407e-d1de-4197-81e4-2d48388d2f5a",
         "Position": {
-          "ID": "6958a5de-5388-4a17-b705-9b769c6e5144",
+          "ID": "80a7aa70-9494-4571-8d87-6e3680278df8",
           "Data": [0, 0, 0]
         },
         "Rotation": {
-          "ID": "aad23723-4423-4428-894e-a3faf3a65493",
+          "ID": "2af13b53-9a55-434c-aa2e-0c3472d740d2",
           "Data": [0, 0, 0, 1]
         },
         "Scale": {
-          "ID": "7d657c43-317a-4eb4-8506-6329d800286f",
+          "ID": "906d1500-6e3d-4c64-8abc-35f979b9d5dd",
           "Data": [1, 1, 1]
         },
         "OrderOffset": {
-          "ID": "393dc90c-76f3-4c2b-a734-b3830f573df6",
+          "ID": "d8139db0-a171-4e9f-bb10-b1c5689fb245",
           "Data": 0
         },
-        "ParentReference": "f426a648-bf20-4629-a56e-c90b554781fb",
+        "ParentReference": "68c5082b-049d-47bc-a18d-ee458be784c1",
         "Children": [
           {
-            "ID": "586c5f9c-ab6e-4de8-89b1-5339b0fff560",
+            "ID": "1e1c52bd-b171-4513-ad47-7bec2835e9d2",
             "Components": {
-              "ID": "1c2ab607-73ec-42c0-b9bf-212d55b5069d",
+              "ID": "a7595e90-8a14-4066-94cf-668c8b97cc4e",
               "Data": [
                 {
                   "Type": "FrooxEngine.DynamicReferenceVariable`1[[FrooxEngine.Slot, FrooxEngine, Version=2024.5.7.505, Culture=neutral, PublicKeyToken=null]]",
                   "Data": {
-                    "ID": "d83e4c0e-d75b-470b-98bf-7151211a6c4b",
-                    "persistent-ID": "ba85379c-e533-4107-baa8-018bf1cbed07",
+                    "ID": "d57604fd-2426-4d42-b902-5b58812a71b0",
+                    "persistent-ID": "e5adce83-833c-4d1e-9aa6-d9c76fbce5b4",
                     "UpdateOrder": {
-                      "ID": "13b7ae38-a0d8-47ea-b9c5-d320b967366a",
+                      "ID": "de81e2d5-52c4-41ac-a924-15356d7d56ce",
                       "Data": 0
                     },
                     "Enabled": {
-                      "ID": "270d7287-e539-4823-b661-cdd686bc897c",
+                      "ID": "7781cce8-922b-4323-b506-ff2b4c6bdb9e",
                       "Data": true
                     },
                     "VariableName": {
-                      "ID": "67d50cbf-a3b5-4d1e-b68b-4c18bbe6f7d8",
+                      "ID": "ad1d6999-a057-45a5-9d32-1d6725c99faf",
                       "Data": "Static.Root"
                     },
                     "Reference": {
-                      "ID": "555c4f01-4b12-4a67-b765-9949a6a9e9ac",
-                      "Data": "a66750d9-0d0a-44a6-bc00-ffc447e1f9ed"
+                      "ID": "4fba340b-3995-4103-a18c-60e610708d6c",
+                      "Data": "73d68185-974b-4d0e-862c-523eabc544ce"
                     },
                     "OverrideOnLink": {
-                      "ID": "558c5833-1d78-46b2-9dfe-fcb1a83c3fa7",
+                      "ID": "bff126d0-9663-4c63-8459-09eaf7a6f1a9",
                       "Data": false
                     }
                   }
@@ -222,26 +222,26 @@
                 {
                   "Type": "FrooxEngine.DynamicReferenceVariable`1[[FrooxEngine.Slot, FrooxEngine, Version=2024.5.7.505, Culture=neutral, PublicKeyToken=null]]",
                   "Data": {
-                    "ID": "aa1ee355-7156-4327-935b-b6e320876e92",
-                    "persistent-ID": "58b0c62c-6bac-4660-ad2a-357c7d19018c",
+                    "ID": "25182fb0-1651-4503-8ea3-05bdeee542fd",
+                    "persistent-ID": "a39418a7-8998-47bc-bcd2-e8f66b29d06b",
                     "UpdateOrder": {
-                      "ID": "60abcb53-c28b-4b78-b308-19ff7f9b2b13",
+                      "ID": "0d1fe3d9-e194-4354-8982-f0ca8f253bd5",
                       "Data": 0
                     },
                     "Enabled": {
-                      "ID": "15a3e1f4-754e-4e63-9def-252685d39790",
+                      "ID": "88772e01-d61c-4bca-bea2-97bf2ee1f0d5",
                       "Data": true
                     },
                     "VariableName": {
-                      "ID": "d8f317f4-10fe-429d-964a-aee027d86992",
+                      "ID": "c2f86a78-88c7-43ca-8afb-19c9c59dee3b",
                       "Data": "Static.Main"
                     },
                     "Reference": {
-                      "ID": "1c98a51b-8ebd-4b6f-96f9-563bf22218bc",
-                      "Data": "aa954b4d-9f3f-42ab-b827-632d88d28056"
+                      "ID": "78903a93-2347-4d55-b1f9-aff8da4a63e7",
+                      "Data": "38d33ec2-2e5a-4d7b-8468-d49b2e7aff77"
                     },
                     "OverrideOnLink": {
-                      "ID": "0bf7b0f4-1962-4457-b1f9-d018b9ac217a",
+                      "ID": "41cc0a4a-a5e7-4d68-bc4f-324438754910",
                       "Data": false
                     }
                   }
@@ -249,26 +249,26 @@
                 {
                   "Type": "FrooxEngine.DynamicReferenceVariable`1[[FrooxEngine.Slot, FrooxEngine, Version=2024.5.7.505, Culture=neutral, PublicKeyToken=null]]",
                   "Data": {
-                    "ID": "091ae060-dd1f-4a9b-b5f7-8928086eb856",
-                    "persistent-ID": "fd7f39bb-84fd-4fbf-bb4f-3092c2eee2b5",
+                    "ID": "ef7743f6-a538-4b6a-9290-98af6453c839",
+                    "persistent-ID": "b703e28d-3208-4282-aca4-57a6ada3152a",
                     "UpdateOrder": {
-                      "ID": "c2c7f05a-23b8-492c-8226-576c14017092",
+                      "ID": "b27f3d13-3ab2-4d61-9294-8218505c6108",
                       "Data": 0
                     },
                     "Enabled": {
-                      "ID": "e07ef3d8-5bbe-4a56-921d-1d8fc9406e80",
+                      "ID": "f3934b58-c68c-4ba9-911f-ea83dc20a2c1",
                       "Data": true
                     },
                     "VariableName": {
-                      "ID": "3fcde08b-c0bb-4635-af18-d61b0fd36cf4",
+                      "ID": "a3df1352-814c-4785-9275-580e5577fd73",
                       "Data": "Static.ChildrenParent"
                     },
                     "Reference": {
-                      "ID": "fefa9832-34a0-4b2f-9070-2ef0a6af12ef",
-                      "Data": "aa954b4d-9f3f-42ab-b827-632d88d28056"
+                      "ID": "fccb4839-5e25-43c8-9f5d-ce22e561b54e",
+                      "Data": "38d33ec2-2e5a-4d7b-8468-d49b2e7aff77"
                     },
                     "OverrideOnLink": {
-                      "ID": "c7039b33-dba5-4d51-aa06-71e42c1fd8ae",
+                      "ID": "4ff87c36-5ecb-47ab-b4d8-8affc00f497d",
                       "Data": false
                     }
                   }
@@ -276,146 +276,65 @@
               ]
             },
             "Name": {
-              "ID": "fe42d1af-7062-4278-8b5c-785b65d3d158",
+              "ID": "2a5b6913-3ad7-4b30-a14e-f07be0308bbc",
               "Data": "DV/Static"
             },
             "Tag": {
-              "ID": "a41bd49d-1efe-4f35-a1e2-fc007be0512d",
+              "ID": "baad72f5-b1b7-4fd8-b4ed-b6b6f17e7c54",
               "Data": ""
             },
             "Active": {
-              "ID": "88518707-67ec-49dd-ade5-2f8d38835b53",
+              "ID": "72f70582-b78a-418c-9bd1-5c3202a6c14d",
               "Data": true
             },
-            "Persistent-ID": "c9b5f7b5-dbe8-46ae-8ee3-8f7bad796092",
+            "Persistent-ID": "ae66eb6f-fd62-4c8f-b393-a5a4d7dfccdb",
             "Position": {
-              "ID": "f82415c2-8efb-4f69-b106-1db2d3f4678c",
+              "ID": "c93f3b8a-68b7-4bfc-99a7-825d3a8f6d86",
               "Data": [0, 0, 0]
             },
             "Rotation": {
-              "ID": "077b7a9a-cf17-4c85-b84a-b9d80c21a932",
+              "ID": "fb98d47a-a23b-462d-a383-55c4ae464e46",
               "Data": [0, 0, 0, 1]
             },
             "Scale": {
-              "ID": "f1f1a606-81aa-4d69-9cf2-c02dc5ccd32f",
+              "ID": "69c19169-84f6-4bab-8071-8d6a4595d4f6",
               "Data": [1, 1, 1]
             },
             "OrderOffset": {
-              "ID": "957f9d3a-8c1d-44d8-965f-3b8a12d2eb42",
+              "ID": "f639e25d-c8e2-42da-a691-994a6d9ecd72",
               "Data": 0
             },
-            "ParentReference": "3a5a6885-906c-4e5c-8aab-2723355b3072",
+            "ParentReference": "f14932a7-aa5c-4eca-985c-6ce12ab192b6",
             "Children": []
           },
           {
-            "ID": "3dba5b93-7e7d-4e4a-956d-ee8f3222c1ff",
+            "ID": "073289bb-0ff4-4a5a-bc80-be5fc5e17af4",
             "Components": {
-              "ID": "a862e8aa-4258-44a1-832a-73282f058f5a",
+              "ID": "e0580201-d3e5-4c7d-9f52-8d942a52d6fa",
               "Data": [
-                {
-                  "Type": "FrooxEngine.DynamicField`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
-                  "Data": {
-                    "ID": "cf1a24ae-0a83-4d64-a44b-6ae766e66869",
-                    "persistent-ID": "65a9b9d8-2535-47bf-ae8f-a158340affac",
-                    "UpdateOrder": {
-                      "ID": "e82e8286-1944-4b99-9e64-50abfd8838fc",
-                      "Data": 0
-                    },
-                    "Enabled": {
-                      "ID": "a594b8bc-1fb0-4018-a3c7-fc3c7e11a859",
-                      "Data": true
-                    },
-                    "VariableName": {
-                      "ID": "e54c724a-b508-4d0b-9224-2366d5cc7acf",
-                      "Data": "Props.name"
-                    },
-                    "TargetField": {
-                      "ID": "58181265-4a84-4628-b972-38fd1284370d",
-                      "Data": "910f20b6-fe59-43d7-9b79-97d22f3dec73"
-                    },
-                    "OverrideOnLink": {
-                      "ID": "51e463cf-a1f9-4e9e-9162-356750369817",
-                      "Data": false
-                    }
-                  }
-                },
-                {
-                  "Type": "FrooxEngine.DynamicField`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
-                  "Data": {
-                    "ID": "c6c2243c-d5a9-470a-9f39-5c98302a5763",
-                    "persistent-ID": "8ca92c0d-ceb2-4d49-8a13-b9919d11f231",
-                    "UpdateOrder": {
-                      "ID": "26e1630d-a708-4066-9654-b16db093fdf6",
-                      "Data": 0
-                    },
-                    "Enabled": {
-                      "ID": "062b8545-9f0b-4d56-9aab-363277f12286",
-                      "Data": true
-                    },
-                    "VariableName": {
-                      "ID": "0aee141a-369f-48a7-b267-0ac71ca3bec4",
-                      "Data": "Props.tag"
-                    },
-                    "TargetField": {
-                      "ID": "14bf8848-29ca-472b-8cb7-e20d18535f2d",
-                      "Data": "85c6d242-5d77-4304-b778-bcfe53d74cb9"
-                    },
-                    "OverrideOnLink": {
-                      "ID": "27d3aaf1-6615-415b-b326-d3f30b4fa3a1",
-                      "Data": false
-                    }
-                  }
-                },
-                {
-                  "Type": "FrooxEngine.DynamicField`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]",
-                  "Data": {
-                    "ID": "a9a745d9-1b60-4f83-9207-76e63953127b",
-                    "persistent-ID": "c925afba-2f46-4bcb-80b7-1d70af14a3ef",
-                    "UpdateOrder": {
-                      "ID": "a828f4bf-b0ae-481e-bc48-849daaa80df8",
-                      "Data": 0
-                    },
-                    "Enabled": {
-                      "ID": "3cbb00be-3d9d-4f88-974b-a9280dcf62e6",
-                      "Data": true
-                    },
-                    "VariableName": {
-                      "ID": "14a1a686-3fa9-4eb2-94a0-3841115ae8d5",
-                      "Data": "Props.active"
-                    },
-                    "TargetField": {
-                      "ID": "00213ac3-2a28-465e-bf8f-e75cdf1ffb12",
-                      "Data": "a6a2f1c7-fd8d-45ad-850f-790fca6958d8"
-                    },
-                    "OverrideOnLink": {
-                      "ID": "79449e39-b8e4-491f-92e1-64c1b2e68cc5",
-                      "Data": false
-                    }
-                  }
-                },
                 {
                   "Type": "FrooxEngine.DynamicField`1[[Elements.Core.float3, Elements.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
                   "Data": {
-                    "ID": "c8973cfd-a4d6-4ccb-b758-ac57cdb7d2b3",
-                    "persistent-ID": "282b5cca-adf0-4d12-bee1-c0c561f8125d",
+                    "ID": "3ad8707c-3cbe-4c38-bdf8-81c945d570a3",
+                    "persistent-ID": "008c50a8-8bb9-44e1-8510-cfaec950b6ba",
                     "UpdateOrder": {
-                      "ID": "fe17dc3d-804c-4aef-8948-f125d79a9543",
+                      "ID": "b76766e3-05c7-43cc-87b8-4862901216a6",
                       "Data": 0
                     },
                     "Enabled": {
-                      "ID": "6223bbc2-3c96-41a8-961f-f71d195bcf61",
+                      "ID": "be8848c3-174c-4a27-99ed-090c7e1998bf",
                       "Data": true
                     },
                     "VariableName": {
-                      "ID": "5887af47-88c8-4e63-9fe5-336706b99068",
+                      "ID": "79979f98-a0b9-4444-8b71-2263b41b234d",
                       "Data": "Props.position"
                     },
                     "TargetField": {
-                      "ID": "c755a1a6-5f84-4ac0-84c9-27b232348c82",
-                      "Data": "bcfe35c9-9390-4d12-adcd-422c2574f081"
+                      "ID": "36758d11-9e56-477b-82ea-f41e88bae37a",
+                      "Data": null
                     },
                     "OverrideOnLink": {
-                      "ID": "386e09d3-296a-42e6-8d41-b288f304ca9b",
+                      "ID": "5286956b-e28e-4357-ba1e-fa2593de7e7e",
                       "Data": false
                     }
                   }
@@ -423,26 +342,26 @@
                 {
                   "Type": "FrooxEngine.DynamicField`1[[Elements.Core.floatQ, Elements.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
                   "Data": {
-                    "ID": "d49388bd-8847-4bae-9d2c-cf46367708b5",
-                    "persistent-ID": "3cc1cef4-a4ba-478a-9e39-41a32bb6b82a",
+                    "ID": "43509072-75b4-46d6-975a-2dc47f897fd6",
+                    "persistent-ID": "93c8fdc0-425a-433a-a3e1-b2d854922d45",
                     "UpdateOrder": {
-                      "ID": "7f766e5e-fc37-4c4e-a0d5-66489f0c8d23",
+                      "ID": "91a75dad-7263-49ce-94f5-5fc959e29a32",
                       "Data": 0
                     },
                     "Enabled": {
-                      "ID": "52d31d93-5652-47be-986f-91163834d3ed",
+                      "ID": "1375b977-2b60-492f-b46d-435d8210c2fc",
                       "Data": true
                     },
                     "VariableName": {
-                      "ID": "65fc9b0c-ae40-4dcd-b455-bc7d8280349c",
+                      "ID": "b7397fad-a484-488f-92fd-5a84b04c64fc",
                       "Data": "Props.rotation"
                     },
                     "TargetField": {
-                      "ID": "0dc88560-1bb1-4fb6-9d94-feec6343156e",
+                      "ID": "0e0f8bec-f966-46af-aff3-b46f043b26f4",
                       "Data": null
                     },
                     "OverrideOnLink": {
-                      "ID": "4ae74fef-513d-4886-bc7a-b89ace176614",
+                      "ID": "162389c2-39eb-4356-b077-e87c71ed90d3",
                       "Data": false
                     }
                   }
@@ -450,100 +369,127 @@
                 {
                   "Type": "FrooxEngine.DynamicField`1[[Elements.Core.float3, Elements.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
                   "Data": {
-                    "ID": "25c63f10-e34e-421e-add7-5ac1675d40ca",
-                    "persistent-ID": "02b5d11c-9aa2-458d-9430-31a05ad00302",
+                    "ID": "1aa69d89-f0e0-432d-9070-2acd03a47897",
+                    "persistent-ID": "fd181bd4-7e2c-479b-b32d-aee23ab87ccf",
                     "UpdateOrder": {
-                      "ID": "61ac522a-9e1d-4926-972e-bdd33356ff57",
+                      "ID": "8b734a7d-620e-4df5-853e-d93944111443",
                       "Data": 0
                     },
                     "Enabled": {
-                      "ID": "44c75843-6d9b-4e98-9b05-3102fdb9a215",
+                      "ID": "4edd72a4-5975-442a-9c23-96b72fc516b0",
                       "Data": true
                     },
                     "VariableName": {
-                      "ID": "1d5b3928-bfe7-4b99-a39c-9e19687d2f28",
-                      "Data": "Props.scale"
+                      "ID": "257bb4c2-80db-4ef7-bcfa-44ac0078630d",
+                      "Data": "Props.size"
                     },
                     "TargetField": {
-                      "ID": "e6419a10-39a7-41b9-bdd4-bc269e69f889",
-                      "Data": "95f8bbf1-1209-4028-98e3-e495151235d7"
+                      "ID": "16bd0b3e-c0b2-4cac-ae41-013e35ac3933",
+                      "Data": null
                     },
                     "OverrideOnLink": {
-                      "ID": "1106c5f7-759b-4b73-9945-aa8ff2075b0b",
+                      "ID": "b6ddaf78-1ad6-45ae-a7ee-0f77c8656b93",
                       "Data": false
+                    }
+                  }
+                },
+                {
+                  "Type": "FrooxEngine.GizmoLink",
+                  "Data": {
+                    "ID": "8872845d-4125-4ca3-8b6d-501585c6c202",
+                    "persistent-ID": "bba1c66c-7190-4b68-8ad1-302edcc24aee",
+                    "UpdateOrder": {
+                      "ID": "89637d94-1849-479b-9ccc-75baa785dc45",
+                      "Data": 0
+                    },
+                    "Enabled": {
+                      "ID": "0a53d113-0c1e-448e-be9a-eabe01771205",
+                      "Data": true
+                    },
+                    "_worker": {
+                      "ID": "720a9528-e881-42b0-9421-ec08065d3fcc",
+                      "Data": "073289bb-0ff4-4a5a-bc80-be5fc5e17af4"
+                    },
+                    "_gizmo": {
+                      "ID": "87d5d5dc-fd76-4535-bdf7-14fb56a23db0",
+                      "Data": null
+                    },
+                    "_type": {
+                      "ID": "d7672e77-1713-43ee-b5ff-e58c21820563",
+                      "Data": "FrooxEngine.SlotGizmo"
                     }
                   }
                 }
               ]
             },
             "Name": {
-              "ID": "de10b5c6-433e-49c4-abac-918bd1098d24",
+              "ID": "3244fe43-09c7-4d75-a4b1-ab2c2bd675a8",
               "Data": "DV/Props"
             },
             "Tag": {
-              "ID": "063a776b-7335-4af1-9fbc-dd2fb4ce012a",
+              "ID": "2ee98d30-8afd-410b-8f76-48c7264570c0",
               "Data": ""
             },
             "Active": {
-              "ID": "4340f884-3169-414f-b0c7-aa84849093de",
+              "ID": "5f19c4cc-b844-47db-97ac-ad8e730076bf",
               "Data": true
             },
-            "Persistent-ID": "118422e7-41f7-44cd-91d5-8f67f047dca2",
+            "Persistent-ID": "0fb8212c-f3e9-41c5-aff7-e0bcf80f312f",
             "Position": {
-              "ID": "e301b380-e5c6-48a4-bfe5-9665377f6dd5",
+              "ID": "3e38caad-c6c8-4f60-9494-bfa24343f85a",
               "Data": [0, 0, 0]
             },
             "Rotation": {
-              "ID": "31e11bc0-fb75-4778-8893-3b718fc280a0",
+              "ID": "a1555745-1c6b-417b-bfa5-1bbc2249188a",
               "Data": [0, 0, 0, 1]
             },
             "Scale": {
-              "ID": "fdb86bee-9c79-431d-a8be-c4a2170d5f84",
+              "ID": "af7e6f89-2497-4366-8db9-af2857ad9439",
               "Data": [1, 1, 1]
             },
             "OrderOffset": {
-              "ID": "11e31861-44ad-42bc-bca3-7775645bf660",
+              "ID": "3d7e245e-87c3-4da5-9562-dfe3ae45f899",
               "Data": 0
             },
-            "ParentReference": "3cdbf871-e9f9-4483-9d0b-450fe477c907",
+            "ParentReference": "11c37ec2-869e-486c-91d9-5d8b1387f4f5",
             "Children": []
           },
           {
-            "ID": "aa954b4d-9f3f-42ab-b827-632d88d28056",
+            "ID": "38d33ec2-2e5a-4d7b-8468-d49b2e7aff77",
             "Components": {
-              "ID": "ce2e3e4b-7bd9-45d6-a2b3-e990aff13535",
+              "ID": "104612b5-a3bd-499e-9d6e-1b1649f7830e",
               "Data": []
             },
             "Name": {
-              "ID": "910f20b6-fe59-43d7-9b79-97d22f3dec73",
-              "Data": "Slot"
+              "ID": "34dd7480-3302-43b6-92e7-00364765bf49",
+              "Data": "Main"
             },
             "Tag": {
-              "ID": "85c6d242-5d77-4304-b778-bcfe53d74cb9",
+              "ID": "bff8d3e2-5b63-48d7-84e2-efb97628472c",
               "Data": ""
             },
             "Active": {
-              "ID": "a6a2f1c7-fd8d-45ad-850f-790fca6958d8",
+              "ID": "e5a9f9a9-b59f-4d1b-8ad4-e350bea5d097",
               "Data": true
             },
-            "Persistent-ID": "b7dae30d-94a4-458f-9657-e9f3a155c1ca",
+            "Persistent-ID": "f543aba6-2ee3-4524-a73d-ae4d0e631aa2",
             "Position": {
-              "ID": "bcfe35c9-9390-4d12-adcd-422c2574f081",
+              "ID": "d219eb02-30a4-4516-ad4a-4722ed190cb2",
               "Data": [0, 0, 0]
             },
             "Rotation": {
-              "ID": "1193fcdb-4dda-4e73-b4c2-8734296325d7",
+              "ID": "f749a477-54ad-4c9f-8592-db9a7649f432",
               "Data": [0, 0, 0, 1]
             },
             "Scale": {
-              "ID": "95f8bbf1-1209-4028-98e3-e495151235d7",
+              "ID": "cca228d5-2389-49ed-9612-332778b23672",
               "Data": [1, 1, 1]
             },
             "OrderOffset": {
-              "ID": "bec4008c-5ff1-4741-a290-c5ca4211eabb",
+              "ID": "0f2b67a3-5572-4f21-acdf-58af8ddbb97a",
               "Data": 0
             },
-            "ParentReference": "4a0b6ee0-f2e9-4dc5-b48c-8a8faa4af5f1",
+            "ParentReference": "94fa2c23-6d50-434e-8fbb-9d0151e98158",
             "Children": []
           }
         ]

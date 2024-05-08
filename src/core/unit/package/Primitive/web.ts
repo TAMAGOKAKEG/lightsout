@@ -1,7 +1,9 @@
-import { web as Slot } from "./Slot/web";
 import { web as Box } from "./Box/web";
+import { web as Cylinder } from "./Cylinder/web";
+import { web as Slot } from "./Slot/web";
 
 export const Units = {
-  ...Slot,
   ...Box,
+  ...Cylinder,
+  ...Slot,
 };
