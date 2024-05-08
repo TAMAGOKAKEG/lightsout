@@ -27,6 +27,7 @@ import {
 
 import { Box } from "../../../unit/package/Primitive/main";
 import { Slot } from "../../../unit/package/Primitive/main";
+import { Cylinder } from "../../../unit/package/Primitive/main";
 import { useRef } from "react";
 import { MatterPhysics, radiansToQuaternionZ } from "./physics";
 
@@ -153,8 +154,7 @@ export const Main = ({}) => {
     }, 1000 / 30);
     matterRef.current.addBox(1, -1, 20, 0.0001, true);
 
-    matterRef.current.addCoin(1, 10, 2, 2, false);
-    matterRef.current.addCoin(1, 10, 2, 2, false);
+    matterRef.current.addCoin(1, 0, 1, false);
   }, []);
 
   return (
@@ -182,6 +182,7 @@ export const Main = ({}) => {
           }
         }
       })}
+      <Cylinder size={[1, 1, 1]} />
       <Box size={[1.1, 1.5, 0.1]}>
         <StyledSpace>
           <Canvas size={[1100, 1500]} position={[0, 0, -0.055]}>

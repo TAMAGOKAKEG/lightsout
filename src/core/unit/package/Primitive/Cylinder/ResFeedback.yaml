@@ -230,7 +230,7 @@ Children:
                   Data: Static.Main
                 Reference:
                   ID: "?"
-                  Data: ID:Main:0
+                  Data: null
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -249,7 +249,7 @@ Children:
                   Data: Static.ChildrenParent
                 Reference:
                   ID: "?"
-                  Data: ID:Main:0
+                  Data: null
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -305,7 +305,7 @@ Children:
                   Data: Props.position
                 TargetField:
                   ID: "?"
-                  Data: null
+                  Data: ID:Cylinder:Tag:2
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -324,7 +324,7 @@ Children:
                   Data: Props.rotation
                 TargetField:
                   ID: "?"
-                  Data: null
+                  Data: ID:Cylinder:Tag:3
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -343,7 +343,7 @@ Children:
                   Data: Props.size
                 TargetField:
                   ID: "?"
-                  Data: null
+                  Data: ID:Cylinder:Tag:4
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -369,38 +369,253 @@ Children:
         Children: []
       - Name:
           ID: "?"
-          Data: Main
+          Data: Cylinder
         Active:
           ID: "?"
           Data: true
-        ID: ID:Main:0
+        ID: "?"
         Persistent-Id: "?"
         Position:
-          ID: "?"
+          ID: ID:Cylinder:Tag:2
           Data:
-            - 0
-            - 0
-            - 0
+            - -101000
+            - 9333.333333333334
+            - -323444.3333333333
         Rotation:
-          ID: "?"
+          ID: ID:Cylinder:Tag:3
           Data:
-            - 0
-            - 0
-            - 0
-            - 111111
+            - -4111
+            - -23666.666666666668
+            - 889
+            - 108444.33333333333
         Scale:
-          ID: "?"
+          ID: ID:Cylinder:Tag:4
           Data:
             - 111111
             - 111111
             - 111111
         Tag:
           ID: "?"
-          Data: ""
+          Data: null
         OrderOffset:
           ID: "?"
           Data: 0
         Components:
           ID: "?"
-          Data: []
+          Data:
+            - Type: FrooxEngine.CylinderMesh
+              Data:
+                ID: ID:Cylinder:Components:FrooxEngine.CylinderMesh:0
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                HighPriorityIntegration:
+                  ID: "?"
+                  Data: false
+                OverrideBoundingBox:
+                  ID: "?"
+                  Data: false
+                OverridenBoundingBox:
+                  ID: "?"
+                  Data:
+                    Min:
+                      - 0
+                      - 0
+                      - 0
+                    Max:
+                      - 0
+                      - 0
+                      - 0
+                Profile:
+                  ID: "?"
+                  Data: Linear
+                Height:
+                  ID: ID:Cylinder:Components:FrooxEngine.CylinderMesh:Height:0
+                  Data: 333.3333333333333
+                Radius:
+                  ID: ID:Cylinder:Components:FrooxEngine.CylinderMesh:Radius:0
+                  Data: 166.66666666666666
+                Sides:
+                  ID: "?"
+                  Data: 5333.333333333333
+                Caps:
+                  ID: "?"
+                  Data: true
+                FlatShading:
+                  ID: "?"
+                  Data: false
+                UVScale:
+                  ID: "?"
+                  Data:
+                    - 333.3333333333333
+                    - 333.3333333333333
+            - Type: FrooxEngine.MeshRenderer
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                Mesh:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:FrooxEngine.CylinderMesh:0
+                Materials:
+                  ID: "?"
+                  Data:
+                    - ID: "?"
+                      Data: ID:Assets:FrooxEngine.PBS_Metallic:ID:1
+                MaterialPropertyBlocks:
+                  ID: "?"
+                  Data: []
+                ShadowCastMode:
+                  ID: "?"
+                  Data: On
+                MotionVectorMode:
+                  ID: "?"
+                  Data: Object
+                SortingOrder:
+                  ID: "?"
+                  Data: 0
+            - Type: FrooxEngine.CylinderCollider
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 333333333.3333333
+                Enabled:
+                  ID: "?"
+                  Data: true
+                Offset:
+                  ID: "?"
+                  Data:
+                    - 0
+                    - 0
+                    - 0
+                Type:
+                  ID: "?"
+                  Data: Static
+                Mass:
+                  ID: "?"
+                  Data: 333.3333333333333
+                CharacterCollider:
+                  ID: "?"
+                  Data: false
+                IgnoreRaycasts:
+                  ID: "?"
+                  Data: false
+                Height:
+                  ID: ID:Cylinder:Components:FrooxEngine.CylinderCollider:Height:0
+                  Data: 333.3333333333333
+                Radius:
+                  ID: ID:Cylinder:Components:FrooxEngine.CylinderCollider:Radius:0
+                  Data: 166.66666666666666
+            - Type: FrooxEngine.ValueCopy`1[System.Single]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                Source:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:FrooxEngine.CylinderMesh:Radius:0
+                Target:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:FrooxEngine.CylinderCollider:Radius:0
+                WriteBack:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.ValueCopy`1[System.Single]
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                Source:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:FrooxEngine.CylinderMesh:Height:0
+                Target:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:FrooxEngine.CylinderCollider:Height:0
+                WriteBack:
+                  ID: "?"
+                  Data: false
+            - Type: FrooxEngine.Grabbable
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                ReparentOnRelease:
+                  ID: "?"
+                  Data: true
+                PreserveUserSpace:
+                  ID: "?"
+                  Data: true
+                DestroyOnRelease:
+                  ID: "?"
+                  Data: false
+                GrabPriority:
+                  ID: "?"
+                  Data: 0
+                GrabPriorityWhenGrabbed:
+                  ID: "?"
+                  Data: null
+                CustomCanGrabCheck:
+                  ID: "?"
+                  Data:
+                    Target: null
+                EditModeOnly:
+                  ID: "?"
+                  Data: false
+                AllowSteal:
+                  ID: "?"
+                  Data: false
+                DropOnDisable:
+                  ID: "?"
+                  Data: true
+                ActiveUserFilter:
+                  ID: "?"
+                  Data: Disabled
+                OnlyUsers:
+                  ID: "?"
+                  Data: []
+                Scalable:
+                  ID: "?"
+                  Data: true
+                Receivable:
+                  ID: "?"
+                  Data: true
+                AllowOnlyPhysicalGrab:
+                  ID: "?"
+                  Data: false
+                _grabber:
+                  ID: "?"
+                  Data: null
+                _lastParent:
+                  ID: "?"
+                  Data: null
+                _lastParentIsUserSpace:
+                  ID: "?"
+                  Data: false
+                __legacyActiveUserRootOnly-ID: "?"
         Children: []
