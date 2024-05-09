@@ -51,7 +51,7 @@ export class MatterPhysics {
     Matter.Composite.add(this.engine.world, box);
 
     this.matterObjects.push(
-      new matterObject(box.id, { type: "box", width, height })
+      new matterObject(box.id, { type: "coin", width, height })
     );
   }
 
@@ -67,30 +67,6 @@ export class MatterPhysics {
       new matterObject(sphere.id, { type: "circle", radius })
     );
   }
-
-  // addCoin(
-  //   x: number,
-  //   y: number,
-  //   radius: number,
-  //   height: number,
-  //   isStatic?: boolean
-  // ) {
-  //   const box = Matter.Bodies.rectangle(
-  //     x * WORLD_SCALE,
-  //     -y * WORLD_SCALE,
-  //     width * WORLD_SCALE,
-  //     height * WORLD_SCALE,
-  //     {
-  //       isStatic: isStatic,
-  //       angle: angle,
-  //     }
-  //   );
-  //   Matter.Composite.add(this.engine.world, box);
-
-  //   this.matterObjects.push(
-  //     new matterObject(box.id, { type: "box", width, height })
-  //   );
-  // }
 
   addForce(bodyId: number, force: { x: number; y: number }) {
     const body = Matter.Composite.get(
@@ -117,7 +93,7 @@ type Shape =
       radius: number;
     }
   | {
-      type: "cylinder";
+      type: "coin";
       width: number;
       height: number;
     };

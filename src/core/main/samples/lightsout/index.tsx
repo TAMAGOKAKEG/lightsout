@@ -152,11 +152,67 @@ export const Main = ({}) => {
       timeRef.current = performance.now();
       update();
     }, 1000 / 30);
-    matterRef.current.addBox(1, -1, 20, 0.0001, true);
 
-    matterRef.current.addCoin(1, 0, 1, false);
-  }, []);
+    matterRef.current.addBox(1, -2, 10, 0.2, true);
+    if (state.isGameOver) {
+      // 5枚コインを落とす、間隔を開けて
+      for (let i = 0; i < 7; i++) {
+        setTimeout(() => {
+          matterRef.current.addCoin(
+            0,
+            Math.random() * 3,
+            0.5,
+            0.1,
+            false,
+            Math.PI / 4
+          );
+        }, i * 100);
+      }
 
+      // restart
+      restart();
+      // すべてのコインをstaticにする
+      matterRef.current.matterObjects.forEach((object) => {
+        if (object.shape.type === "coin") {
+          const finded = matterRef.current.engine.world.bodies.find(
+            (composite) => composite.id === object.bodyId
+          );
+          if (finded) {
+            finded.isStatic = true;
+          }
+        }
+      });
+      console.log(state);
+    }
+
+    // matterRef.current.addCoin(
+    //   Math.random() * 3,
+    //   Math.random() * 3,
+    //   0.5,
+    //   0.1,
+    //   false,
+    //   Math.PI / 4
+    // );
+
+    // matterRef.current.addCoin(
+    //   Math.random() * 440,
+    //   Math.random() * 3,
+    //   1,
+    //   1,
+    //   false,
+    //   Math.PI / 4
+    // );
+    // matterRef.current.addCoin(
+    //   Math.random() * 3,
+    //   Math.random() * 3,
+    //   0.5,
+    //   0.5,
+    //   false,
+    //   Math.PI / 4
+    // );
+
+    console.log(matterRef.current.engine.world);
+  }, [state.isGameOver]);
   return (
     <Slot>
       {/* if game over , drop a coin */}
@@ -176,13 +232,36 @@ export const Main = ({}) => {
                     0,
                   ]}
                   rotation={radiansToQuaternionZ(finded.angle)}
-                  size={[object.shape.width, object.shape.height, 1]}
+                  size={[object.shape.width, object.shape.height, 10]}
+                />
+                // <Cylinder
+                //   key={finded.id}
+                //   position={[
+                //     finded.position.x * WORLD_SCALE,
+                //     -finded.position.y * WORLD_SCALE,
+                //     0,
+                //   ]}
+                //   rotation={radiansToQuaternionZ(finded.angle)}
+                //   size={[0.5, 0.1, 0.5]}
+                // />
+              );
+            case "coin":
+              return (
+                <Cylinder
+                  key={finded.id}
+                  position={[
+                    finded.position.x * WORLD_SCALE,
+                    -finded.position.y * WORLD_SCALE,
+                    0,
+                  ]}
+                  rotation={radiansToQuaternionZ(finded.angle)}
+                  size={[0.5, 0.1, 0.5]}
                 />
               );
           }
         }
       })}
-      <Cylinder size={[1, 1, 1]} />
+
       <Box size={[1.1, 1.5, 0.1]}>
         <StyledSpace>
           <Canvas size={[1100, 1500]} position={[0, 0, -0.055]}>
